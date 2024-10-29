@@ -20,7 +20,7 @@ const interactionSchema = new mongoose.Schema({
 const UserInteraction = mongoose.model('UserInteraction', interactionSchema);
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ limit: '2mb', extended: true}));
+app.use(bodyParser.urlencoded({ limit: '5mb', extended: true}));
 
 app.post('/save-interaction', async (req, res) => {
     try {
