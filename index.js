@@ -1,4 +1,5 @@
 import express from 'express';
+import sharp from 'sharp';
 import bodyParser from 'body-parser';
 
 const app = express();
