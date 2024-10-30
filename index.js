@@ -7,6 +7,8 @@ import bodyParser from 'body-parser';
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+mongoose.set('debug', true);
+
 mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('MongoDB connected'))
     .catch(error => console.error('MongoDB connection error:', error));
